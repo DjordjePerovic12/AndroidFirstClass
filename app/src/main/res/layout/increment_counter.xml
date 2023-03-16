@@ -23,5 +23,6 @@
         android:text="Increment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCounter" />
+        app:layout_constraintTop_toBottomOf="@id/tvCounter"
+        android:textColor="@color/black"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
