@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the shows you watched"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Braking Bad"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelect"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twin Peaks"
+        app:layout_constraintTop_toBottomOf="@+id/cbFirst"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/cbThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peaky Blinders"
+        app:layout_constraintTop_toBottomOf="@+id/cbSecond"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your favorite"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cbThird" />
+
+    <RadioGroup
+        android:id="@+id/rgFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFavorite">
+
+
+        <RadioButton
+            android:id="@+id/rbFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breaking Bad" />
+
+        <RadioButton
+            android:id="@+id/rbSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twin Peaks" />
+
+        <RadioButton
+            android:id="@+id/rbThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peaky Blinders" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgFavorite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
